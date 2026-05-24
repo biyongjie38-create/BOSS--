@@ -170,14 +170,6 @@ npm run build
 - LLM JSON 解析失败：自动化测试 `src/lib/deepseek.test.ts` 已模拟首次失败并验证修复；真实手动可临时把 `parseAnalysisJson` 前的 first-pass mock 改成非 JSON 后运行测试
 - Supabase 保存失败：临时移除 `SUPABASE_SERVICE_ROLE_KEY` 或填错表名，应显示 `SUPABASE_SAVE_ERROR`
 
-## Render 部署
-
-1. 把代码推到 GitHub。
-2. Render 创建 Web Service，连接 GitHub 仓库。
-3. Build Command：`npm ci && npm run build`
-4. Start Command：`npm run start`
-5. 添加环境变量：`ALPHA_VANTAGE_API_KEY`、`DEEPSEEK_API_KEY`、`SUPABASE_URL`、`SUPABASE_SERVICE_ROLE_KEY`
-6. 部署后访问 Render URL，测试 `AAPL`。
 
 ## Debug 记录
 
