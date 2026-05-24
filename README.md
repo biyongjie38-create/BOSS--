@@ -1,6 +1,6 @@
 # AI 股票分析面板
 
-一个面试作业级全栈 MVP：输入股票代码，后端获取 Alpha Vantage 当前行情，调用 DeepSeek 输出严格 JSON 分析，并把行情与分析结果保存到 Supabase。
+一个全栈 MVP：输入股票代码，后端获取 Alpha Vantage 当前行情，调用 DeepSeek 输出严格 JSON 分析，并把行情与分析结果保存到 Supabase。
 
 ## 功能
 
@@ -43,7 +43,6 @@ SUPABASE_URL=
 SUPABASE_SERVICE_ROLE_KEY=
 ```
 
-不要把 `.env.local` 提交到 GitHub。
 
 ## Supabase schema
 
@@ -193,7 +192,6 @@ npm run build
 - 不包含登录、历史记录、watchlist、图表或批量分析
 - Alpha Vantage 免费层可能限频；限频会映射为 `ALPHA_VANTAGE_ERROR`
 - AI 输出只是行情摘要，不构成投资建议
-- Supabase 使用 service role key，只能在服务端读取，不能暴露给客户端
 
 ## 参考文档
 
